@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/mediaqueries.css" />
+</head>
+
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo"> A@J </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../pages_html/about.html">A Propos</a></li>
+                <li><a href="../pages_html/experience.html">Stacks</a></li>
+                <li><a href="../pages_html/projects.html">Projects</a></li>
+                <li><a href="../pages_html/contact.html">Contact</a></li>
+                <li><a href="../pages_html/quiz.html">Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">A@J</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#" onclick="toggleMenu()">Accueil</a></li>
+                <li><a href="#about" onclick="toggleMenu()">APropos</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Stacks</a></li>
+            </div>
+        </div>
+    </nav>
+    <section class="quiz">
+        <h1>Quiz</h1>
+        <form id="footballQuiz">
+            <!-- Question 1 -->
+            <h3>1. Quelle équipe a remporté la Coupe du Monde 2018 ?</h3>
+            <input type="radio" name="q1" id="q1a" value="a">a. France<br>
+            <input type="radio" name="q1" id="q1b" value="b">b. Brésil<br>
+            <input type="radio" name="q1" id="q1c" value="c">c. Allemagne<br>
+
+            <h3>2. Qui est le meilleur buteur de tous les temps en Coupe du Monde ?</h3>
+            <input type="radio" name="q2" id="q2a" value="a">a. Lionel Messi<br>
+            <input type="radio" name="q2" id="q2b" value="b">b. Cristiano Ronaldo<br>
+            <input type="radio" name="q2" id="q2c" value="c">c. Pelé<br>
+
+            <h3>3. Quel club a remporté le plus de Ligue des champions de l'UEFA ?</h3>
+            <input type="radio" name="q3" id="q3a" value="a">a. Real Madrid<br>
+            <input type="radio" name="q3" id="q3b" value="b">b. FC Barcelone<br>
+            <input type="radio" name="q3" id="q3c" value="c">c. Manchester United<br>
+
+            <h3>4. Quelle équipe a remporté la première Coupe du Monde de l'histoire en 1930 ?</h3>
+            <input type="radio" name="q4" id="q4a" value="a">a. Italie<br>
+            <input type="radio" name="q4" id="q4b" value="b">b. Uruguay<br>
+            <input type="radio" name="q4" id="q4c" value="c">c. Brésil<br>
+
+            <h3>5. Qui a remporté le Ballon d'Or en 2020 ?</h3>
+            <input type="radio" name="q5" id="q5a" value="a">a. Lionel Messi<br>
+            <input type="radio" name="q5" id="q5b" value="b">b. Cristiano Ronaldo<br>
+            <input type="radio" name="q5" id="q5c" value="c">c. Robert Lewandowski<br>
+
+            <h3>6. Quel pays a remporté le plus de Coupes d'Afrique des Nations (CAN) ?</h3>
+            <input type="radio" name="q6" id="q6a" value="a">a. Nigeria<br>
+            <input type="radio" name="q6" id="q6b" value="b">b. Egypte<br>
+            <input type="radio" name="q6" id="q6c" value="c">c. Cameroun<br>
+
+            <h3>7. Qui est le capitaine actuel de l'équipe nationale du Brésil ?</h3>
+            <input type="radio" name="q7" id="q7a" value="a">a. Neymar<br>
+            <input type="radio" name="q7" id="q7b" value="b">b. Thiago Silva<br>
+            <input type="radio" name="q7" id="q7c" value="c"> c.Casemiro<br>
+
+            <h3>8. Quel joueur a remporté le Soulier d'Or de la Ligue des champions de l'UEFA en 2021 ?</h3>
+            <input type="radio" name="q8" id="q8a" value="a">a. Lionel Messi<br>
+            <input type="radio" name="q8" id="q8b" value="b">b. Robert Lewandowski<br>
+            <input type="radio" name="q8" id="q8c" value="c">c. Erling Haaland<br>
+
+            <h3>9. Quel stade a accueilli la finale de la Coupe du Monde 2014 ?</h3>
+            <input type="radio" name="q9" id="q9a" value="a">a. Maracanã (Brésil)<br>
+            <input type="radio" name="q9" id="q9b" value="b">b. Estádio do Dragão (Portugal)<br>
+            <input type="radio" name="q9" id="q9c" value="c">c. Arena de São Paulo (Brésil)<br>
+
+            <h3>10. Quel joueur est souvent surnommé "CR7" ?</h3>
+            <input type="radio" name="q10" id="q10a" value="a">a. Lionel Messi<br>
+            <input type="radio" name="q10" id="q10b" value="b">b. Neymar<br>
+            <input type="radio" name="q10" id="q10c" value="c">c. Cristiano Ronaldo<br>
+
+            <h3>11. Quelle équipe a remporté le plus de Coupes du Monde de la FIFA ?</h3>
+            <input type="radio" name="q11" id="q11a" value="a">a. Brésil<br>
+            <input type="radio" name="q11" id="q11b" value="b">b. Allemagne<br>
+            <input type="radio" name="q11" id="q11c" value="c">c. Italie<br>
+
+            <h3>12. Quel club a remporté le plus de championnats de Premier League en Angleterre ?</h3>
+            <input type="radio" name="q12" id="q12a" value="a">a. Liverpool<br>
+            <input type="radio" name="q12" id="q12b" value="b">b. Manchester United<br>
+            <input type="radio" name="q12" id="q12c" value="c">c. Chelsea<br>
+
+            <h3>13. En quelle année le Club Sportif Sfaxien a-t-il été fondé ?</h3>
+            <input type="radio" name="q13 " id="q13a" value="a">a. 1928<br>
+            <input type="radio" name="q13" id="q13b" value="b">b. 1925<br>
+            <input type="radio" name="q13" id="q13c" value="c">c. 1920<br>
+
+            <h3>14. Combien de fois le CSS a-t-il remporté le championnat de Tunisie ?</h3>
+            <input type="radio" name="q14" id="q14a" value="a">a. 5 fois<br>
+            <input type="radio" name="q14" id="q14b" value="b">b. 10 fois<br>
+            <input type="radio" name="q14" id="q14c" value="c">c. 15 fois<br>
+
+            <h3>15. Quelle est la couleur principale du maillot du CSS ?</h3>
+            <input type="radio" name="q15" id="q15a" value="a">a. Rouge<br>
+            <input type="radio" name="q15" id="q15b" value="b">b. Noir<br>
+            <input type="radio" name="q15" id="q15c" value="c">c. Jaune<br>
+            <br>
+            <button type="button" onclick="checkAnswers()" style="background-color:  rgb(188, 99, 248); 
+                                                    color: white; 
+                                                    padding: 10px 20px; 
+                                                    border: none; 
+                                                    border-radius: 5px; 
+                                                    cursor: pointer;
+                                                    margin-bottom: 5%;">
+    Vérifier les réponses
+</button>
+
+
+        </form>
+    </section>
+    <script src="../js/script.js"></script>
+    <script src="../js/script_quiz.js"></script>
+
+</body>
+
+</html>

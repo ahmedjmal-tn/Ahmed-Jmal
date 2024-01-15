@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo"> A@J </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../pages_html/about.html">A Propos</a></li>
+        <li><a href="../pages_html/experience.html">Stacks</a></li>
+        <li><a href="../pages_html/projects.html">Projects</a></li>
+        <li><a href="../pages_html/contact.html">Contact</a></li>
+        <li><a href="../pages_html/quiz.html">Quiz</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">A@J</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#" onclick="toggleMenu()">Accueil</a></li>
+        <li><a href="#about" onclick="toggleMenu()">APropos</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Stacks</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="projects">
+    <p class="section__text__p1">Découvrez l'essence de mon travail à travers une sélection soigneusement choisie de
+      projets qui reflètent ma créativité et mes compétences techniques. Chacun de ces projets a été conçu avec
+      passion, visant à résoudre des problèmes concrets et à offrir des expériences utilisateur exceptionnelles.
+      Explorez ces réalisations pour avoir un aperçu plus approfondi de mon parcours et de ma capacité à
+      transformer des idées en applications concrètes :</p>
+    <h1 class="title">Portfolio</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="../assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">GoloGo</h2>
+          <p class="section__text__p1">Un projet de moteur de recherche avec PHP visant à faciliter la recherche </p>
+          <br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https:'//github.com/ahmedjmal-tn/Moteur-de-Recherche'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="../assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">TCM
+          </h2>
+          <p class="section__text__p1">Un projet de plateforme web de gestion complète pour un centre de formation.
+          </p><br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/ahmedjmal-tn/TrainingCenterManagement'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://ahmedjmal-tn.github.io/TrainingCenterManagement/'">
+              Voir Lien
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="../assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Athena Shop </h2>
+          <p class="section__text__p1">Un projet regroupant trois applications : Athena Shop, Athena Magazine et Athena
+            Analyse
+          </p><br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='http://www.c-athena.com/?fbclid=IwAR1-8cvAslS2kA7NuH2NEDkbUaBKgR3879-OSeLRbjxLCFO5cFzdLDk0gGI'">
+              Voir Lien
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="../assets/bigdata.png" alt="Project 1" class="project-img" style="height: 250px;" />
+          </div>
+          <h2 class="experience-sub-title project-title">Elastic Search</h2>
+          <p class="section__text__p1">
+            Le projet utilise Elastic Search pour gérer efficacement un ensemble de données
+            simple avec une cartographie personnalisée.</p>
+          <br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/ahmedjmal-tn/BigDataElasticSearch'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="../assets/sudokuSolver.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">sudokuSolver
+          </h2>
+          <p class="section__text__p1">
+            L'objectif du Sudoku est de remplir une grille divisée en N régions de N case
+
+          </p><br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/ahmedjmal-tn/TrainingCenterManagement'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://ahmedjmal-tn.github.io/SudokuSolver/'">
+              Voir Lien
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="../assets/spam.png" alt="Project 3" class="project-img" style="height: 222px;" />
+          </div>
+          <h2 class="experience-sub-title project-title">Mail Spam Detection</h2>
+          <p class="section__text__p1">Le projet de machine learning se concentre sur la création d'un système de détection de spams
+          </p><br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ahmedjmal-tn/MailSpam'">
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Copyright &#169; 2023 | Par Ahmed.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

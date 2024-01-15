@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/mediaqueries.css" />
+</head>
+
+<body>
+
+  <nav id="desktop-nav">
+    <div class="logo"> A@J </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../pages_html/about.html">A Propos</a></li>
+        <li><a href="../pages_html/experience.html">Stacks</a></li>
+        <li><a href="../pages_html/projects.html">Projects</a></li>
+        <li><a href="../pages_html/contact.html">Contact</a></li>
+        <li><a href="../pages_html/quiz.html">Quiz</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">A@J</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#" onclick="toggleMenu()">Accueil</a></li>
+        <li><a href="#about" onclick="toggleMenu()">APropos</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Stacks</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="about">
+    <p class="section__text__p1">Qui suis-je</p>
+    <h1 class="title">A Propos</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="../assets/education.png" alt="Experience icon" class="icon" />
+            <h3>Soft Skills</h3>
+            <p>Serviable</p>
+            <p>Intelligence sociale</p>
+          </div>
+          <div class="details-container">
+            <img src="../assets/experience.png" alt="Education icon" class="icon" />
+            <h3>Certifications</h3>
+            <p><a href="../assets/Django_Certif.pdf" target="_blank">Udemy Django Certification</a>
+            </p>
+
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+
+            En tant qu'étudiant en informatique, je suis fortement motivé à améliorer mes compétences et à faire
+            progresser ma carrière. Tout au long de mon parcours académique, j'ai réalisé de nombreux projets,
+            comprenant des travaux individuels, des missions académiques et des stages au sein de plusieurs entreprises.
+            Ces expériences ont affiné non seulement mes compétences techniques, mais ont également nourri ma passion
+            pour l'apprentissage continu et le développement. Je suis enthousiaste à l'idée de continuer à appliquer mes
+            connaissances et mon expertise pour contribuer à des projets innovants et stimuler le progrès dans le
+            domaine de l'informatique.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright &#169; 2023 | Par Ahmed.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

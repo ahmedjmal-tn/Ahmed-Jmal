@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="../css/2.css" />
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo"> A@J </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../pages_html/about.html">A Propos</a></li>
+        <li><a href="../pages_html/experience.html">Stacks</a></li>
+        <li><a href="../pages_html/projects.html">Projects</a></li>
+        <li><a href="../pages_html/contact.html">Contact</a></li>
+        <li><a href="../pages_html/quiz.html">Quiz</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">A@J</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#" onclick="toggleMenu()">Accueil</a></li>
+        <li><a href="#about" onclick="toggleMenu()">APropos</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Stacks</a></li>
+      </div>
+    </div>
+  </nav>
+  <section class="contact section" id="contact">
+    <h2 class="section__title">Contacter moi</h2>
+    <div class="contact__container container grid">
+      <div>
+        <div class="contact__information">
+          <i class="uil uil-phone-alt contact__icon"></i>
+
+          <div>
+            <h3 class="contact__title">Appel Moi</h3>
+            <span class="contatc__subtitle">(+216) 26397245</span>
+          </div>
+        </div>
+
+        <div class="contact__information">
+          <i class="uil uil-envelope contact__icon"></i>
+
+          <div>
+            <h3 class="contact__title">E-mail</h3>
+            <span class="contatc__subtitle">Ahmed.jemel2639@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="contact__information">
+          <i class="uil uil-map-marker contact__icon"></i>
+
+        </div>
+      </div>
+
+      <form action="" class="contact__form grid">
+        <div class="contact__inputs grid">
+          <div class="contact__content">
+            <label for="" class="contact__label">Name</label>
+            <input type="text" class="contact__input">
+          </div>
+
+          <div class="contact__content">
+            <label for="" class="contact__label">E-mail</label>
+            <input type="email" class="contact__input">
+          </div>
+        </div>
+        <div class="contact__content">
+          <label for="" class="contact__label">Description</label>
+          <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+        </div>
+
+        <div>
+          <a href="#" class="button button--flex">
+
+            Envoyer le message
+            <i class="uil uil-message button__icon"></i>
+          </a>
+        </div>
+      </form>
+    </div>
+
+  </section>
+  <footer>
+    <p>Copyright &#169; 2023 | Par Ahmed.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

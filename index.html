@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mediaqueries.css" />
+</head>
+
+<body>
+
+  <nav id="desktop-nav">
+    <div class="logo"> A@J </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="/pages_html/about.html">A Propos</a></li>
+        <li><a href="/pages_html/experience.html">Stacks</a></li>
+        <li><a href="/pages_html/projects.html">Projects</a></li>
+        <li><a href="/pages_html/contact.html">Contact</a></li>
+        <li><a href="/pages_html/quiz.html">Quiz</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">A@J</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#" onclick="toggleMenu()">Accueil</a></li>
+        <li><a href="#about" onclick="toggleMenu()">APropos</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Stacks</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/1.jpg" alt="photo profile" class="about-pic" />
+    </div>
+    <div class="section__text">
+      <h1 class="title">Ahmed Jmal</h1>
+      <p class="section__text__p2">Je suis Developpeur Web</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Ahmed Jmal .pdf')">
+          CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='/pages_html/projects.html'">
+          Portfolio
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/jmal-ahmed-b0b8b3224/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/ahmedjmal-tn'" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright &#169; 2023 | Par Ahmed.</p>
+  </footer>
+  <script src="js/script.js"></script> 
+</body>
+
+</html>
